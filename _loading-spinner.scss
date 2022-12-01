@@ -1,0 +1,164 @@
+.loader{
+    font-family: $ft-fam;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(250, 230, 207);
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    animation: disappear 1s 5s linear forwards ;
+ 
+@keyframes disappear{
+  0%{
+    transform:scale(1);
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  to{  
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.container-loader{
+  width: 300px;
+  height:500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+  
+.loader-logo{
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 20%;
+  animation: bounce 5s cubic-bezier(0,.74,.93,.39) forwards;
+
+  .logo-1{
+    color: $primary-color;
+    opacity: 0;
+  animation: bounce 0.5s 0s linear forwards;
+  }
+  .logo-2{
+    color: $secondary-color;
+    opacity: 0;
+  animation: bounce 1s 1s linear forwards;
+  }
+  .logo-3{
+    color: $tertiary-color;
+    opacity: 0;
+  animation: bounce 1.5s 1.5s linear forwards;
+  }
+  .logo-4{
+    color: $primary-color;
+    opacity: 0;
+  animation: bounce 2s 2s linear forwards;
+  }
+  .logo-5{
+    color: $secondary-color;
+    opacity: 0;
+  animation: bounce 2.5s 2.5s linear forwards;
+  }
+  .logo-6{
+    color: $tertiary-color;
+    opacity: 0;
+  animation: bounce 3s 3s linear forwards;
+  }
+  .logo-7{
+    color: $primary-color;
+    opacity: 0;
+  animation: bounce 3.5s 3.5s linear forwards;
+  }
+  .logo-8{
+    color: $secondary-color;
+    opacity: 0;
+  animation: bounce 4s 3.75s linear forwards;
+  }
+}
+      @keyframes bounce{
+        0%{
+          bottom: 80%;
+          transform: scale(1);
+          opacity: 0;
+        }
+       
+        90%{
+          bottom: 0;
+          transform: scale(1.5);
+          opacity: 1;
+        }
+        95%{
+          transform: scale(1.75);
+        }
+        100%{
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+  
+
+     .center {
+        position: absolute;
+        top: 50%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+          }
+    .wave {
+        width: 5px;
+        height: 80px;
+        background: $loader;
+        margin: 5px;
+        animation: wave 1s linear infinite;
+        border-radius: 20px;
+    }      
+
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .wave:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .wave:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .wave:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .wave:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .wave:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  .wave:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+  .wave:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+  .wave:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+}
+
